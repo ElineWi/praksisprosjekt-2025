@@ -1,27 +1,60 @@
 /* Style for navigasjonsmenyen */
 nav {
   display: flex;
-  justify-content: flex-end; /* Plasserer lenkene til høyre */
-  background-color: #f4f4f4; /* Lys bakgrunnsfarge for menyen */
-  padding: 10px 20px; /* Litt innvendig padding */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Legger til en svak skygge */
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #f4f4f4;
+  padding: 10px 20px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-nav a {
-  text-decoration: none; /* Fjerner understrek */
-  color: #333; /* Mørk tekstfarge */
-  font-size: 1.2rem; /* Større tekst */
-  margin-left: 20px; /* Avstand mellom lenkene */
-  font-weight: bold; /* Fet tekst */
-  transition: color 0.3s ease; /* Myk overgang for fargeendring */
+.logo-container {
+  display: flex;
+  align-items: center; 
 }
 
-nav a:hover {
-  color: green; /* Endrer farge til grønn ved hover */
+.logo {
+  height: 40px; 
+  width: auto; 
+  margin-right: 10px; 
+  display: inline-block;
 }
 
+.logo-text {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: #333; 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center; 
+}
+
+.nav-links a {
+  text-decoration: none; 
+  color: #333; 
+  font-size: 1.2rem; 
+  margin-left: 20px; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
+}
+
+.nav-links a:hover {
+  color: green; 
+}
+
+/* Stil for overskift og tekst */
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-top: 120px; 
-  color: green;
+  color: rgb(45, 104, 61);
+  text-align: center; 
+}
+
+p {
+  font-size: 1.5rem; 
+  line-height: 1.8; 
+  color: #333; 
+  text-align: center; 
 }
