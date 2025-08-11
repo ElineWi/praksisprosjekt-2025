@@ -1,0 +1,27 @@
+/* Style for navigasjonsmenyen */
+nav {
+  display: flex;
+  justify-content: flex-end; /* Plasserer lenkene til høyre */
+  background-color: #f4f4f4; /* Lys bakgrunnsfarge for menyen */
+  padding: 10px 20px; /* Litt innvendig padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Legger til en svak skygge */
+}
+
+nav a {
+  text-decoration: none; /* Fjerner understrek */
+  color: #333; /* Mørk tekstfarge */
+  font-size: 1.2rem; /* Større tekst */
+  margin-left: 20px; /* Avstand mellom lenkene */
+  font-weight: bold; /* Fet tekst */
+  transition: color 0.3s ease; /* Myk overgang for fargeendring */
+}
+
+nav a:hover {
+  color: green; /* Endrer farge til grønn ved hover */
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 120px; 
+  color: green;
+}
