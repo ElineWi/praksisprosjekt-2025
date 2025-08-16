@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navPlaceholder = document.getElementById("nav-placeholder");
   if (navPlaceholder) {
-    fetch("/nav.html") // Absolutt sti til nav.html
+    // Dynamisk sti til nav.html basert på plasseringen av HTML-filen
+    const pathToNav = window.location.pathname.includes("/pages/") ? "../nav.html" : "nav.html";
+
+    fetch(pathToNav)
       .then(response => {
         if (!response.ok) {
           throw new Error("Kunne ikke laste nav.html");
