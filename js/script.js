@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navPlaceholder = document.getElementById("nav-placeholder");
   if (navPlaceholder) {
     // Dynamisk sti til nav.html basert på plasseringen av HTML-filen
-    const pathToNav = window.location.pathname.includes("/pages/") ? "../nav.html" : "nav.html";
+    const pathToNav = window.location.pathname.includes("/pages/") ? "../components/nav.html" : "components/nav.html";
 
     fetch(pathToNav)
       .then(response => {
